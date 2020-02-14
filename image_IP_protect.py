@@ -9,8 +9,8 @@ import sys
 sc = SparkContext.getOrCreate();
 
 spark=SparkSession.builder \
-    .master("spark://ip-10-0-0-6:7077") \
-    .appName("PicturePerfect") \
+    .master("<spark_master_node_IP>") \
+    .appName("Image_IP_Protect") \
     .getOrCreate()
 
 #Custom Modules
