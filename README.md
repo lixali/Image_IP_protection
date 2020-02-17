@@ -39,7 +39,7 @@ Pipeline
 ### Environment Setup
 
 Install and configure [AWS CLI](https://aws.amazon.com/cli/) and [Pegasus](https://github.com/InsightDataScience/pegasus) on your local machine, and clone this repository using
-`git clone https://github.com/AndreyBozhko/TaxiOptimizer`.
+`git clone https://github.com/lixali/Image_IP_protection`.
 
 > AWS Tip: Add your local IP to your AWS VPC inbound rules
 
