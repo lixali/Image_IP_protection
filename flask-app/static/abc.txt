@@ -1,0 +1,20 @@
+{% extends "layout.html" %} {% block page_title %}Admin Dashboard{% endblock %} {% block body %} {{ super() }} {# only invoked when failed adding new ID due to duplication #} {% if id_to_add_is_duplicated %}
+× Warning! The account name already exists. 
+{% endif %} {# only invoked when failed adding new ID due to invalid character #} {% if id_to_add_is_invalid %}
+× Warning! The account name is invalid. 
+{% endif %}
+Add Account
+ID 
+Password 
+
+
+Submit 
+Manage Existing Accounts
+{% for number, id, act in users %} {% endfor %}
+#
+ID
+Action
+{{ number }} 
+{{ id }} 
+Delete
+{% endblock %} 
