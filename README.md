@@ -10,9 +10,9 @@ This project aims at creating a pipeline that users can do generate a database o
 
 A lot of companies has proprietary pictures and they might be used by other organization without permission (e.g companies' logo or ). This pipeline employs both Vantage Point approach (pixel based compaision) and Deep Ranking model (CNN model https://arxiv.org/abs/1404.4661) to make the search faster and more accurate.
 
-![alt text](https://github.com/AndreyBozhko/TaxiOptimizer/blob/master/docs/map.jpg "Image_IP_Protection Screenshot")
+![alt text](https://github.com/lixali/Image_IP_protection/blob/master/flask-app/static/Screen%20Shot%202020-02-17%20at%204.49.46%20PM.png "Image_IP_Protection Screenshot Upload Picture")
 
-
+![alt text](https://github.com/lixali/Image_IP_protection/blob/master/flask-app/static/Screen%20Shot%202020-02-17%20at%204.59.47%20PM.png "Image_IP_Protection Screenshot Similar Picture Found")
 
 Pipeline
 -----------------
