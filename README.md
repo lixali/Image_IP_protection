@@ -10,6 +10,8 @@ This project aims at creating a pipeline that users can do generate a database o
 
 A lot of companies has proprietary pictures and they might be used by other organization without permission (e.g companies' logo or ). This pipeline employs both Vantage Point approach (pixel based compaision) and Deep Ranking model (CNN model https://arxiv.org/abs/1404.4661) to make the search faster and more accurate.
 
+The following two pictures show what it looks like when uploading a picture on the website www.data-eningeering.xyz and a similar picture is found. 
+
 ![alt text](https://github.com/lixali/Image_IP_protection/blob/master/flask-app/static/Screen%20Shot%202020-02-17%20at%204.49.46%20PM.png "Image_IP_Protection Screenshot Upload Picture")
 
 ![alt text](https://github.com/lixali/Image_IP_protection/blob/master/flask-app/static/Screen%20Shot%202020-02-17%20at%204.59.47%20PM.png "Image_IP_Protection Screenshot Similar Picture Found")
@@ -17,8 +19,10 @@ A lot of companies has proprietary pictures and they might be used by other orga
 Pipeline
 -----------------
 
-![alt text](https://github.com/AndreyBozhko/TaxiOptimizer/blob/master/docs/pipeline.jpg "Image_IP_Protection Pipeline Indexing")
-![alt text](https://github.com/AndreyBozhko/TaxiOptimizer/blob/master/docs/pipeline.jpg "Image_IP_Protection Pipeline Query ")
+![alt text](https://github.com/lixali/Image_IP_protection/blob/master/flask-app/static/Screen%20Shot%202020-02-17%20at%205.13.32%20PM.png "Image_IP_Protection Pipeline Indexing")
+![alt text](https://github.com/lixali/Image_IP_protection/blob/master/flask-app/static/Screen%20Shot%202020-02-17%20at%205.13.55%20PM.png "Image_IP_Protection Pipeline Query ")
+![alt text](https://github.com/lixali/Image_IP_protection/blob/master/flask-app/static/Screen%20Shot%202020-02-17%20at%205.14.56%20PM.png "Image_IP_Protection Pipeline Deep Ranking Model Feature extraction")
+![alt text](https://github.com/lixali/Image_IP_protection/blob/master/flask-app/static/Screen%20Shot%202020-02-17%20at%205.16.11%20PM.png "Image_IP_Protection Pipeline Deep Ranking Query ")
 
 ***Batch Job***: 100 million pictures (100G) from Image-net.org are ingested from S3 bucket into Spark, which computes will 
 (1)generate VP-trees(store in the pickle file format), hash table(stored in txt file format);  
