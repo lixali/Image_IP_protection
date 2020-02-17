@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block page_title %}Welcome{% endblock %}
+{% block body %}
+    {{ super() }}
+
+    <p>The main purpose of the pipeline is to search for similar or indentical image </p>
+    <ul>
+        <li>Upload files</li>
+        <form action='/upload_image' method=post enctype=multipart/form-data>
+            <p><input type=file name=file>
+            <input type=submit value=Upload>
+            <input type=submit value=Search>
+        </form>
+
+    </ul>
+
+{% endblock %}
