@@ -69,10 +69,10 @@ Configuration settings for Kafka, PostgreSQL, AWS S3 bucket, as well as the sche
 ## Running Image_IP_protection
 
 ### Indexing
-go to "Image_IP_protection/" folder and run the following command "spark-submit --packages com.amazonaws:aws-java-sdk:1.7.4,org.apache.hadoop:hadoop-aws:2.7.6 --master spark://ip-10-0-0-6:7077 image_IP_protect.py"
+go to "Image_IP_protection/" folder and run the following command "spark-submit --packages com.amazonaws:aws-java-sdk:1.7.4,org.apache.hadoop:hadoop-aws:2.7.6 --master spark://<Internal EC2 IP address>:7077 image_IP_protect.py"
 
 ### Using Deep ranking model
-go to "Image_IP_protection/deep_ranking/" folder and run the following command "spark-submit --packages com.amazonaws:aws-java-sdk:1.7.4,org.apache.hadoop:hadoop-aws:2.7.6 --master spark://ip-10-0-0-6:7077 spark_deploy_model.py"
+go to "Image_IP_protection/deep_ranking/" folder and run the following command "spark-submit --packages com.amazonaws:aws-java-sdk:1.7.4,org.apache.hadoop:hadoop-aws:2.7.6 --master spark://<Internal EC2 IP address>:7077 spark_deploy_model.py"
 
 
 ### Flask
